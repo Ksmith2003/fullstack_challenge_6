@@ -1,0 +1,15 @@
+<div class="column is-one-quarter">
+    <p><strong>Name: </strong><%=customer.full_name%></p>
+    <% if customer.image.present? %>
+        <div class="card-image">
+            <figure class="image is-3by4">
+                <%= image_tag customer.image%>
+            </figure>
+        </div>
+    <%end%>
+
+    <p><strong>Email: </strong><%=customer.email_address%></p>
+    <p><strong>Phone: </strong><%=customer.phone_number%></p>
+    <p><strong>Notes: </strong><%=customer.notes%></p>
+    <br>
+</div>
